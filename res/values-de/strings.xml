@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ROM Control</string>
+    <string name="app_name">Personalize</string>
 
     <!-- Main -->
     <string name="user_interface">Benutzeroberfläche</string>
@@ -447,14 +447,14 @@
 
     <string name="devs">Entwickler</string>
 
-    <string name="aokp_website_title">AOKP Webseite</string>
+    <string name="aocp_website_title">TheCollective Webseite</string>
 
 
-    <string name="aokp_source_summary">AOKP ist vollständig Open Source. Die neuste Version findest Du immer unter github.com/aokp</string>
-    <string name="aokp_irc_title">Tritt unserem IRC-Channel bei</string>
+    <string name="aocp_source_summary">TheCollective ist vollständig Open Source. Die neuste Version findest Du immer unter github.com/aocp</string>
 
-    <string name="about_aokp">Über AOKP</string>
-    <string name="about_aokp_summary">@null</string>
+
+    <string name="about_aocp">Über TheCollective</string>
+    <string name="about_aocp_summary">@null</string>
 
     <!--  Kernel Tweaks -->
     <string name="pt_fast_charge_boot">Fast Charge</string>

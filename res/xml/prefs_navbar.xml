@@ -74,7 +74,7 @@
                         android:title="@string/navigation_bar_width_title"
                         android:summary="@string/navigation_bar_width_summary" />
 
-		<com.aokp.romcontrol.widgets.SeekBarPreference
+		<com.collective.personalize.widgets.SeekBarPreference
 			android:key="button_transparency"
 			android:title="@string/button_transparency_title" />
 

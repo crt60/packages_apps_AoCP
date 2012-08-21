@@ -56,7 +56,7 @@
         </LinearLayout>
         
         <ImageView
-                android:id="@+id/donate_button"
+                android:id="@+id/about_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/photo"
@@ -64,7 +64,7 @@
                 android:paddingBottom="4dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="centerInside"
-                android:src="@drawable/paypal_donate"/>
+                android:src="@drawable/team_profile"/>
 
     </RelativeLayout>
 

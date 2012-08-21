@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 
-import com.aokp.romcontrol.R;
+import com.collective.personalize.R;
 
 public class ImageListPreference extends ListPreference {
     private int[] resourceIds = null;

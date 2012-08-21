@@ -1,126 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:aokp="http://schemas.android.com/apk/res/com.aokp.romcontrol">
+	xmlns:aocp="http://schemas.android.com/apk/res/com.collective.personalize">
 
 	<PreferenceCategory
-		android:key="aokp"
-		android:title="@string/aokp">
+		android:key="aocp"
+		android:title="@string/aocp">
 
 		<Preference
-			android:key="aokp_website"
-			android:title="@string/aokp_website_title"
-			android:summary="@string/aokp_website_summary" />
+			android:key="aocp_website"
+			android:title="@string/aocp_website_title"
+			android:summary="@string/aocp_website_summary" />
 
 		<Preference
-			android:key="aokp_source"
-			android:title="@string/aokp_source_title"
-			android:summary="@string/aokp_source_summary" />
+			android:key="aocp_source"
+			android:title="@string/aocp_source_title"
+			android:summary="@string/aocp_source_summary" />
+<!-- Commented Out For Now Till Set Up
+		<Preference
+			android:key="aocp_review"
+			android:title="@string/aocp_review_title"
+			android:summary="@string/aocp_review_summary" /> -->
 
 		<Preference
-			android:key="aokp_review"
-			android:title="@string/aokp_review_title"
-			android:summary="@string/aokp_review_summary" />
-
-		<Preference
-			android:key="aokp_irc"
-			android:title="@string/aokp_irc_title"
-			android:summary="@string/aokp_irc_summary" />
+			android:key="aocp_gplus"
+			android:title="@string/aocp_gplus_title"
+			android:summary="@string/aocp_gplus_summary" />
 
 	</PreferenceCategory>
 
 	<PreferenceCategory
 		android:key="devs"
 		android:title="@string/devs">
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="Roman"
-			aokp:nameDev="romanbb"
-			aokp:twitterHandle="romanbb"
-			aokp:donateLink="@string/donate_roman" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="David"
+			aocp:nameDev="Johnsondr80"
+			aocp:twitterHandle="CollectiveDevs"
+			aocp:profileLink="@string/profile_johnsondr80" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="Whitehawkx"
-			aokp:nameDev="Whitehawkx"
-			aokp:twitterHandle="whitehawkx"
-			aokp:donateLink="@string/donate_whitehawk" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Tim"
+			aocp:nameDev="Ruger94"
+			aocp:twitterHandle="ruger94"
+			aocp:profileLink="@string/profile_ruger94" />
 		
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="kwes"
-			aokp:nameDev="kwes"
-			aokp:twitterHandle="kwes1020"
-			aokp:donateLink="@string/donate_kwes" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="John"
+			aocp:nameDev="Fezzy102"
+			aocp:twitterHandle="fezzy1022"
+			aocp:profileLink="@string/profile_fezzy102" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="Zaphod-Beeble"
-			aokp:nameDev="Zaphod-Beeble"
-			aokp:twitterHandle="Dont_Panic_Zaph"
-			aokp:donateLink="@string/donate_zaph" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Dan"
+			aocp:nameDev="DaNaRkI"
+			aocp:twitterHandle="CollectiveDevs"
+			aocp:profileLink="@string/profile_danarki" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="ProTekk"
-			aokp:nameDev="ProTekk"
-			aokp:twitterHandle="protekkfzs"
-			aokp:donateLink="@string/donate_protekk" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Jason"
+			aocp:nameDev="Boog"
+			aocp:twitterHandle="CollectiveDevs"
+			aocp:profileLink="@string/profile_boog" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="Khas Mek"
-			aokp:nameDev="Khas Mek"
-			aokp:twitterHandle="KhasMek"
-			aokp:donateLink="@string/donate_khasmek" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Roger"
+			aocp:nameDev="Crt60"
+			aocp:twitterHandle="CollectiveDevs"
+			aocp:profileLink="@string/profile_crt60" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="sethyx"
-			aokp:nameDev="sethyx"
-			aokp:twitterHandle="sethyx"
-			aokp:donateLink="@string/donate_sethyx" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Damon"
+			aocp:nameDev="Dman3285"
+			aocp:twitterHandle="dman32855"
+			aocp:profileLink="@string/profile_dman3285" />
 		
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="MarcLandis"
-			aokp:nameDev="MarcLandis"
-			aokp:twitterHandle="MarcLandis"
-			aokp:donateLink="@string/donate_marclandis" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Rob"
+			aocp:nameDev="Robm1911"
+			aocp:twitterHandle="robm1911"
+			aocp:profileLink="@string/profile_robm1911" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="justreboot"
-			aokp:nameDev="Just Reboot"
-			aokp:twitterHandle="just_reboot"
-			aokp:donateLink="@string/donate_just_reboot" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Alex H."
+			aocp:nameDev="MortemTaum"
+			aocp:twitterHandle="CollectiveDevs"
+			aocp:profileLink="@string/profile_mortem_taum" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="nitroz"
-			aokp:nameDev="Nitroz"
-			aokp:twitterHandle="NitrozK"
-			aokp:donateLink="@string/donate_nitroz" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Lawarnce"
+			aocp:nameDev="Silverwrx03"
+			aocp:twitterHandle="lawrencepeach"
+			aocp:profileLink="@string/profile_silverwrx03" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="sixstringsg"
-			aokp:nameDev="sixstringsg"
-			aokp:twitterHandle="sixstringsg"
-			aokp:donateLink="@string/donate_sixstringsg" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Leslie"
+			aocp:nameDev="KingMurry"
+			aocp:twitterHandle="CollectiveDevs"
+			aocp:profileLink="@string/profile_kingmurry" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="adamthecashew"
-			aokp:nameDev="adamthecashew"
-			aokp:twitterHandle="adamthecashew"
-			aokp:donateLink="@string/donate_adam" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Eric"
+			aocp:nameDev="EE23HD2"
+			aocp:twitterHandle="ee23hd2"
+			aocp:profileLink="@string/profile_ee23hd2" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="xoom"
-			aokp:nameDev="xoomdev"
-			aokp:twitterHandle="xoomdev"
-			aokp:donateLink="@string/donate_xoom" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Alex P."
+			aocp:nameDev="Plexicle"
+			aocp:twitterHandle="alexpaluzzi"
+			aocp:profileLink="@string/profile_plexicle" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="stevespear"
-			aokp:nameDev="Stevespear426"
-			aokp:twitterHandle="stevespeartweet"
-			aokp:donateLink="@string/donate_stevespear" />
+		<com.collective.personalize.widgets.DeveloperPreference
+			android:title="Carlos"
+			aocp:nameDev="KornKlown69"
+			aocp:twitterHandle="krowwf"
+			aocp:profileLink="@string/profile_kornklown69" />
 
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="birdman"
-			aokp:nameDev="birdman"
-			aokp:twitterHandle="_mrbirdman_"
-			aokp:donateLink="@string/donate_birdman" />
 	</PreferenceCategory>
 
 </PreferenceScreen>

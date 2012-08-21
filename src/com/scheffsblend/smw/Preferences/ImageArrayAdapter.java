@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.ImageView;
 
-import com.aokp.romcontrol.R;
+import com.collective.personalize.R;
 
 /**
  * The ImageArrayAdapter is the array adapter used for displaying an additional

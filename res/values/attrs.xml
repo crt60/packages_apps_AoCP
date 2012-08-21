@@ -8,7 +8,7 @@
     <declare-styleable name="DeveloperPreference">
         <attr name="twitterHandle" format="string" />
         <attr name="nameDev" format="string"/>
-        <attr name="donateLink" format="string" />
+        <attr name="profileLink" format="string" />
     </declare-styleable>
 
     <declare-styleable name="ImageListPreference">

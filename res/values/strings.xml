@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ROM Control</string>
+    <string name="app_name">Personalize</string>
 
     <!-- Header Strings -->
     <string name="user_interface">Interface</string>
@@ -24,7 +24,7 @@
     <string name="performance">Performance</string>
 
     <!-- Activity titles defined in AndroidManifest.xml -->
-    <string name="title_about">About AOKP</string>
+    <string name="title_about">About TheCollective</string>
     <string name="title_ui">General User Interface</string>
     <string name="title_statusbar_clock">Statusbar Clock</string>
     <string name="title_statusbar_toggles">Statusbar Toggles</string>
@@ -65,32 +65,31 @@
 
     <!-- About -->
     <string name="devs">The Crew</string>
-    <string name="aokp">Android Open Kang Project</string>
-    <string name="aokp_website_title">AOKP Website</string>
-    <string name="aokp_website_summary">www.aokp.co - Find all newest releases here.</string>
-    <string name="aokp_source_title">AOKP Source</string>
-    <string name="aokp_source_summary">AOKP is fully open source. You can always check out the latest source at github.com/aokp</string>
-    <string name="aokp_review_title">AOKP Code Review</string>
-    <string name="aokp_review_summary">AOKP\'s Gerrit Review instance for submitting and testing patches</string>
-    <string name="aokp_irc_title">Join us on IRC</string>
-    <string name="aokp_irc_summary">#teamkang @ irc.freenode.net</string>
-    <string name="about_aokp">About AOKP</string>
-    <string name="about_aokp_summary">@null</string>
-    <string name="donate_roman">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MZD7JLRX6P99Y</string>
-    <string name="donate_whitehawk">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8W7F2Y7S7KRM6</string>
-    <string name="donate_zaph">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=AW4DJFL3UWKS2</string>
-    <string name="donate_protekk">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YJTUMSBC2TRHS</string>
-    <string name="donate_khasmek">http://nyan.cat</string>
-    <string name="donate_sethyx">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=5R4DYJLDYDRAU</string>
-    <string name="donate_adam">http://goo.gl/fRj57</string>
-    <string name="donate_kwes">https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=HGAN9G5ZJ2AAS&amp;lc=US&amp;item_name=kwes1020&amp;currency_code=USD&amp;bn=PP%%2dDonationsBF%%3abtn_donateCC_LG%2egif%%3aNonHosted</string>
-    <string name="donate_nitroz">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=U27ZAWB8995TS</string>
-    <string name="donate_xoom">http://bit.ly/t7YC5Z</string>
-    <string name="donate_marclandis">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=7FN44KF8XZXFW</string>
-    <string name="donate_sixstringsg">https://www.paypal.com/cgi-bin/webscr?cmd=_flow&amp;SESSION=U3KYhTz6itHx8bKvx-F79EFVY5sQKKQu9f1ftkJ1pevFN6wdaJLu8yz3Y3e&amp;dispatch=5885d80a13c0db1f8e263663d3faee8d1e83f46a36995b3856cef1e18897ad75</string>
-    <string name="donate_just_reboot">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WEZKU46DAFMSW</string>
-    <string name="donate_stevespear">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=6SY3WH7AZNR7Y</string>
-    <string name="donate_birdman">https://support.woundedwarriorproject.org/Default.aspx?tsid=66&amp;campaignSource=WEBSITE</string>
+    <string name="aocp">Android Open Collective Project</string>
+    <string name="aocp_website_title">TheCollective Website</string>
+    <string name="aocp_website_summary">www.aocp.co - Find all newest releases here.</string>
+    <string name="aocp_source_title">TheCollective Source</string>
+    <string name="aocp_source_summary">TheCollective is fully open source. You can always check out the latest source at github.com/aocp</string>
+    <string name="aocp_review_title">TheCollective Code Review</string>
+    <string name="aocp_review_summary">TheCollective\'s Gerrit Review instance for submitting and testing patches</string>
+    <string name="aocp_gplus_title">Join us on GooglePlus</string>
+    <string name="aocp_gplus_summary">https://plus.google.com/118410901028408865706/posts</string>
+    <string name="about_aocp">About TheCollective</string>
+    <string name="about_aocp_summary">@null</string>
+	<string name="profile_johnsondr80">http://forum.xda-developers.com/member.php?u=3314129</string>
+	<string name="profile_ruger94">http://forum.xda-developers.com/member.php?u=3716027</string>
+	<string name="profile_fezzy102">http://forum.xda-developers.com/member.php?u=3199956</string>
+	<string name="profile_danarki">http://forum.xda-developers.com/member.php?u=4023855</string>
+	<string name="profile_boog">http://forum.xda-developers.com/member.php?u=983346</string>
+	<string name="profile_crt60">http://forum.xda-developers.com/member.php?u=813691</string>
+	<string name="profile_dman3285">http://forum.xda-developers.com/member.php?u=2879389</string>
+	<string name="profile_robm1911">http://forum.xda-developers.com/member.php?u=3232214</string>
+	<string name="profile_mortem_taum">http://forum.xda-developers.com/member.php?u=3595808</string>
+	<string name="profile_silverwrx03">http://forum.xda-developers.com/member.php?u=3570900</string>	
+	<string name="profile_kingmurry">http://forum.xda-developers.com/member.php?u=3509434</string>	
+	<string name="profile_ee23hd2">http://forum.xda-developers.com/member.php?u=2535093</string>
+	<string name="profile_plexicle">http://forum.xda-developers.com/member.php?u=4493228</string>
+	<string name="profile_kornklown69">http://forum.xda-developers.com/member.php?u=3534303</string>
 
     <!-- General UI -->
     <string name="enable_volume_options">Enable Volume Panel</string>
@@ -357,7 +356,7 @@
     <string name="direction_west">W</string>
     <string name="direction_north_west">NW</string>
     <string name="lockscreen_weather_title">Lockscreen Weather</string>
-    <string name="lockscreen_weather_summary">Show Weather Information on Lockscreen. You need to enable ROMControl\'s Weather service to use this</string>
+    <string name="lockscreen_weather_summary">Show Weather Information on Lockscreen. You need to enable AoCP\'s Weather service to use this</string>
     <string name="lockscreen_weather_type_title">Lockscreen Weather style</string>
     <string name="lockscreen_weather_type_summary">Whether to show graphical or text weather information.</string>
     <string name="menu_weather_get_weather">Get weather</string>

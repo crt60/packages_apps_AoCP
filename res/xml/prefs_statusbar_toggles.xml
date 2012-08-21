@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
-    xmlns:aokp="http://schemas.android.com/apk/res/com.aokp.romcontrol">
+    xmlns:aocp="http://schemas.android.com/apk/res/com.collective.personalize">
 
     <Preference
         android:key="enable_toggles"
@@ -14,8 +14,8 @@
     <com.scheffsblend.smw.Preferences.ImageListPreference
         android:entries="@array/toggles_layout_entries"
         android:entryValues="@array/toggles_layout_entries"
-        aokp:entryImages="@array/toggles_layout_images"
-        aokp:summaryImage="@drawable/toggle_layout_summary"
+        aocp:entryImages="@array/toggles_layout_images"
+        aocp:summaryImage="@drawable/toggle_layout_summary"
         android:key="toggles_layout_preference"
         android:title="@string/toggles_layout_title" />
 
@@ -39,7 +39,7 @@
             android:title="@string/toggle_btn_disabled_color_title"
             android:defaultValue="#4C4C4C" />
 
-        <com.aokp.romcontrol.widgets.SeekBarPreference
+        <com.collective.personalize.widgets.SeekBarPreference
             android:key="toggle_btn_alpha"
             android:title="@string/toggle_button_alpha_title" />
 

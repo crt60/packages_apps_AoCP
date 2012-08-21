@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Nastavení ROM</string>
   <string name="user_interface">Rozhraní</string>
   <string name="cancel">Zrušit</string>
   <string name="ok">OK</string>
@@ -20,7 +19,7 @@
   <string name="tools">Nástroje</string>
   <string name="performance">Výkon</string>
   
-  <string name="title_about">O AOKP</string>
+  <string name="title_about">O TheCollective</string>
   <string name="title_ui">Hlavní uživatelské rozhraní</string>
   <string name="title_statusbar_clock">Hodiny ve stavové liště</string>
   <string name="title_statusbar_toggles">Přepínače ve stavové liště</string>
@@ -56,14 +55,14 @@
   <string name="group_applications">Aplikace</string>
   
   <string name="devs">Vývojáři</string>
-  <string name="aokp">Android Open Kang Project</string>
-  <string name="aokp_website_title">Web AOKP</string>
-  <string name="aokp_source_title">Zdroové kódy AOKP</string>
-  <string name="aokp_source_summary">AOKP má otevřený kód. Vždy je možné si prohlédnout nejnovější verzi na github.com/aokp</string>
-  <string name="aokp_review_title">Revize AOKP kódu</string>
-  <string name="aokp_review_summary">Gerrit server AOKP pro odesílání a testování patchů</string>
-  <string name="aokp_irc_title">Připojit se na IRC</string>
-  <string name="about_aokp">O AOKP</string>
+  <string name="aocp">Android Open Collective Project</string>
+  <string name="aocp_website_title">Web TheCollective</string>
+  <string name="aocp_source_title">Zdroové kódy TheCollective</string>
+  <string name="aocp_source_summary">TheCollective má otevřený kód. Vždy je možné si prohlédnout nejnovější verzi na github.com/aocp</string>
+  <string name="aocp_review_title">Revize TheCollective kódu</string>
+  <string name="aocp_review_summary">Gerrit server TheCollective pro odesílání a testování patchů</string>
+  <string name="aocp_gplus_title">Připojit se na IRC</string>
+  <string name="about_aocp">O TheCollective</string>
   
   <string name="enable_volume_options">Zapnout volby hlasitosti</string>
   <string name="status_bar_notif_count_title">Zobrazit počet upozornění</string>

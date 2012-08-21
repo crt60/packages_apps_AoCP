@@ -2,30 +2,30 @@
 
     <header
         android:id="@+id/about"
-        android:fragment="com.aokp.romcontrol.fragments.About"
-        android:title="@string/about_aokp"
+        android:fragment="com.collective.personalize.fragments.About"
+        android:title="@string/about_aocp"
 	android:icon="@drawable/ic_rom_control_about"
-        android:summary="@string/about_aokp_summary" />
+        android:summary="@string/about_aocp_summary" />
 
     <header android:title="@string/user_interface" />
 
     <header
         android:id="@+id/user_interface"
-        android:fragment="com.aokp.romcontrol.fragments.UserInterface"
+        android:fragment="com.collective.personalize.fragments.UserInterface"
         android:title="@string/general_ui"
         android:icon="@drawable/ic_rom_control_general_ui"
         android:summary="@string/header_summary_general_ui" />
 
     <header
         android:id="@+id/lockscreen"
-        android:fragment="com.aokp.romcontrol.fragments.Lockscreens"
+        android:fragment="com.collective.personalize.fragments.Lockscreens"
         android:title="@string/lockscreen_options"
         android:icon="@drawable/ic_rom_control_lockscreens"
         android:summary="@string/header_summary_lockscreens" />
 
      <header
         android:id="@+id/nav_bar"
-        android:fragment="com.aokp.romcontrol.fragments.Navbar"
+        android:fragment="com.collective.personalize.fragments.Navbar"
         android:title="@string/nav_bar"
         android:icon="@drawable/ic_rom_control_navigation_bar"
         android:summary="@string/header_summary_navigation_bar" />
@@ -37,19 +37,19 @@
     <header
         android:id="@+id/statusbar_battery"
         android:title="@string/battery"
-        android:fragment="com.aokp.romcontrol.fragments.StatusBarBattery"
+        android:fragment="com.collective.personalize.fragments.StatusBarBattery"
         android:icon="@drawable/ic_rom_control_battery"
         android:summary="@string/header_summary_battery" />
 
     <header
         android:id="@+id/statusbar_clock"
-        android:fragment="com.aokp.romcontrol.fragments.StatusBarClock"
+        android:fragment="com.collective.personalize.fragments.StatusBarClock"
         android:summary="@string/header_summary_clock"
         android:icon="@drawable/ic_rom_control_clock"
         android:title="@string/clock" />
     <header
         android:id="@+id/statusbar_toggles"
-        android:fragment="com.aokp.romcontrol.fragments.StatusBarToggles"
+        android:fragment="com.collective.personalize.fragments.StatusBarToggles"
         android:icon="@drawable/ic_rom_control_toggles"
         android:summary="@string/header_summary_toggles"
         android:title="@string/toggles_layout" />
@@ -60,21 +60,21 @@
 
     <header
         android:id="@+id/led"
-        android:fragment="com.aokp.romcontrol.fragments.LEDControl"
+        android:fragment="com.collective.personalize.fragments.LEDControl"
         android:title="@string/led_options"
         android:icon="@drawable/ic_rom_control_led"
         android:summary="@string/header_summary_led" />
 
     <header
         android:id="@+id/sound"
-        android:fragment="com.aokp.romcontrol.fragments.Sound"
+        android:fragment="com.collective.personalize.fragments.Sound"
         android:title="@string/sound"
         android:icon="@drawable/ic_rom_control_sound"
         android:summary="@string/header_summary_sound" />
 
     <header
         android:id="@+id/weather"
-        android:fragment="com.aokp.romcontrol.fragments.Weather"
+        android:fragment="com.collective.personalize.fragments.Weather"
         android:title="@string/weather"
         android:summary="@string/header_summary_weather"
         android:icon="@drawable/ic_rom_control_weather" />
@@ -89,8 +89,8 @@
             android:title="@string/performance">
         <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.aokp.romcontrol.performance.Performance"
-                android:targetPackage="com.aokp.romcontrol" />
+                android:targetClass="com.collective.personalize.performance.Performance"
+                android:targetPackage="com.collective.personalize" />
     </header>
 
 
