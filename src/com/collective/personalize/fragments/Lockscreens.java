@@ -10,30 +10,44 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.provider.CalendarContract.Calendars;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.widget.Toast;
 
 import com.collective.personalize.AoCPPreferenceFragment;
 import com.collective.personalize.R;
@@ -46,6 +60,8 @@ public class Lockscreens extends AoCPPreferenceFragment implements
     private static final String PREF_LOCKSCREEN_BATTERY = "lockscreen_battery";
     private static final String PREF_VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     private static final String PREF_USER_OVERRIDE = "lockscreen_user_timeout_override";
+    private static final String PREF_LOCKSCREEN_WEATHER = "lockscreen_weather";
+    private static final String PREF_LOCKSCREEN_WEATHER_TYPE = "lockscreen_weather_type";
 
     public static final int REQUEST_PICK_WALLPAPER = 199;
     public static final int REQUEST_PICK_CUSTOM_ICON = 200;
@@ -59,6 +75,8 @@ public class Lockscreens extends AoCPPreferenceFragment implements
     CheckBoxPreference mLockscreenBattery;
     CheckBoxPreference mVolumeRockerWake;
     CheckBoxPreference mLockScreenTimeoutUserOverride;
+    CheckBoxPreference mLockscreenWeather;
+    ListPreference mLockscreenWeatherType;
 
     ArrayList<String> keys = new ArrayList<String>();
 
@@ -77,12 +95,19 @@ public class Lockscreens extends AoCPPreferenceFragment implements
 
         mVolumeRockerWake = (CheckBoxPreference) findPreference(PREF_VOLUME_ROCKER_WAKE);
         mVolumeRockerWake.setChecked(Settings.System.getBoolean(mContext
-                .getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN,
-                false));
+                .getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN, false));
 
         mLockScreenTimeoutUserOverride = (CheckBoxPreference) findPreference(PREF_USER_OVERRIDE);
         mLockScreenTimeoutUserOverride.setChecked(Settings.Secure.getInt(getActivity()
                 .getContentResolver(), Settings.Secure.LOCK_SCREEN_LOCK_USER_OVERRIDE, 0) == 1);
+        mLockscreenWeather = (CheckBoxPreference) findPreference(PREF_LOCKSCREEN_WEATHER);
+        mLockscreenWeather.setChecked(Settings.System.getBoolean(getActivity().getContentResolver(),
+                Settings.System.LOCKSCREEN_WEATHER, false));
+
+        mLockscreenWeatherType = (ListPreference) findPreference(PREF_LOCKSCREEN_WEATHER_TYPE);
+        mLockscreenWeatherType.setOnPreferenceChangeListener(this);
+        mLockscreenWeatherType.setValue(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.LOCKSCREEN_WEATHER_TYPE, 0) + "");
 
         mLockscreenWallpaper = findPreference("wallpaper");
 

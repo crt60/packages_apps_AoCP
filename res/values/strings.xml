@@ -51,6 +51,8 @@
 
     <!-- Menu Strings -->
     <string name="menu_nav_bar_reset">Reset nav bar</string>
+    <string name="menu_user_interface_reset">Reset notification wallpaper</string>
+    <string name="menu_lockscreens_reset">Reset lockscreen wallpaper</string>
 
     <!-- General Strings -->
     <string name="advanced_settings">Advanced settings</string>
@@ -100,6 +102,11 @@
     <string name="notification_wallpaper_summary">You can remove the wallpaper from the menu in this window</string>
     <string name="notif_wallpaper_alpha_title">Notification background alpha</string>
     <string name="alpha_dialog_title">Set alpha value</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Enter an empty label to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="ime_switcher_title">Show IME Switcher</string>
+    <string name="ime_switcher_summary">In statusbar, while typing (requires reboot)</string>
 
     <!-- Statusbar | Toggles -->
     <string name="toggle_style_title">Toggle style</string>
@@ -257,6 +264,28 @@
     <string name="lockscreen_wallpaper_summary">You can remove the wallpaper from the menu in this window</string>
     <string name="title_lockscreen_user_timeout_override">Wait to lock screen</string>
     <string name="summary_lockscreen_user_timeout_override">Use Android\'s timeout setting after you manually turn the screen off. The default behavior is to use the delay only when the screen times out by itself.</string>
+    <string name="lockscreen_weather_cat">Weather</string>
+    <string name="lockscreen_weather_title">Enable</string>
+    <string name="lockscreen_weather_summary">Show Weather Information on Lockscreen. You need to enable ROMControl\'s Weather service to use this</string>
+    <string name="lockscreen_weather_type_title">Lockscreen Weather style</string>
+    <string name="lockscreen_weather_type_summary">Whether to show graphical or text weather information.</string>
+    <string name="lockscreen_calendar_cat">Calendar</string>
+    <string name="lockscreen_calendar_title">Enable</string>
+    <string name="lockscreen_calendar_summary">Show upcoming event(s) from your calendar on the lockscreen.</string>
+    <string name="lockscreen_calendar_sources_title">Calendar sources</string>
+    <string name="lockscreen_calendar_sources_summary">Select the calendars you want to see.</string>
+    <string name="lockscreen_calendar_dialog">Choose which calendars to use</string>
+    <string name="lockscreen_calendar_close">Close</string>
+    <string name="lockscreen_calendar_range_title">Time-range</string>
+    <string name="lockscreen_calendar_range_summary">Select the time-range to be displayed.</string>
+    <string name="lockscreen_calendar_use_colors_title">Use colors</string>
+    <string name="lockscreen_calendar_use_colors_summary">If enabled, events will be colored like in your calendar.</string>
+    <string name="lockscreen_calendar_hide_ongoing_title">Hide ongoing events</string>
+    <string name="lockscreen_calendar_hide_ongoing_summary">If enabled, events which already started won\'t show up.</string>
+    <string name="lockscreen_calendar_flip_title">Multiple events</string>
+    <string name="lockscreen_calendar_flip_summary">If enabled, the widget will display multiple events by flipping between them.</string>
+    <string name="lockscreen_calendar_interval_title">Flip interval</string>
+    <string name="lockscreen_calendar_interval_summary">Choose the animation speed in seconds.</string>
 
     <!-- Weather -->
     <string name="weather_enable">Enable weather</string>
@@ -283,6 +312,7 @@
     <string name="weather_loc_warning_msg">"Obtaining location from network is currently disabled. This breaks the ability to get the current weather in your current location. Please set a custom location or enable obtaining your location from your network."</string>
     <string name="weather_loc_warning_positive">"Enable network location"</string>
     <string name="weather_loc_warning_negative">"Don't enable."</string>
+    <string name="menu_weather_get_weather">Get weather</string>
 
     <!-- Weather Codes -->
     <string name="weather_0">Tornado</string>
@@ -355,16 +385,14 @@
     <string name="direction_south_west">SW</string>
     <string name="direction_west">W</string>
     <string name="direction_north_west">NW</string>
-    <string name="lockscreen_weather_title">Lockscreen Weather</string>
-    <string name="lockscreen_weather_summary">Show Weather Information on Lockscreen. You need to enable AoCP\'s Weather service to use this</string>
-    <string name="lockscreen_weather_type_title">Lockscreen Weather style</string>
-    <string name="lockscreen_weather_type_summary">Whether to show graphical or text weather information.</string>
-    <string name="menu_weather_get_weather">Get weather</string>
 
     <!-- Share to clipboard -->
     <string name="clipboard_notification">Copied to clipboard.</string>
 
     <!-- Performance -->
+    <string name="tab_cpu_settings">"CPU Settings"</string>
+    <string name="tab_voltage_settings">"Voltage Settings"</string>
+    <string name="tab_other_settings">"Other Settings"</string>
     <string name="current_speed">Current Speed</string>
     <string name="current_max">Current max:</string>
     <string name="current_min">Current min:</string>
@@ -379,6 +407,10 @@
     <string name="ps_free_memory_boot">Apply the amount above at boot</string>
     <string name="pt_fast_charge_boot">Fast Charge</string>
     <string name="ps_fast_charge_boot">Enable fast charge at boot</string>
+    <string name="ps_volt_mhz_voltage">" MHz Voltage"</string>
+    <string name="ps_volt_save">"Save"</string>
+    <string name="ps_volt_current_voltage">"Current voltage: "</string>
+    <string name="ps_volt_setting_to_apply">"Setting to apply: "</string>
     <string name="pt_volt_control">Voltage control</string>
     <string name="ps_volt_control">Set voltages for each frequency</string>
     <string name="not_supported">Your kernel does not support voltage control</string>
