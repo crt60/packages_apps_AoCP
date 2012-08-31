@@ -24,6 +24,23 @@
         android:defaultValue="false" />
 
     <PreferenceCategory
+        android:key="weather_cat"
+        android:title="@string/lockscreen_weather_cat">
+        
+        <CheckBoxPreference
+            android:key="lockscreen_weather"
+            android:title="@string/lockscreen_weather_title"
+            android:summary="@string/lockscreen_weather_summary" />
+
+        <ListPreference
+	        android:key="lockscreen_weather_type"
+	        android:entries="@array/pref_lockscreen_weather_type_entries"
+	        android:entryValues="@array/pref_lockscreen_weather_type_values"
+	        android:dependency="lockscreen_weather"
+	        android:title="@string/lockscreen_weather_type_title"
+	        android:summary="@string/lockscreen_weather_type_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory
         android:key="advanced_cat"
         android:title="@string/advanced_settings">
 

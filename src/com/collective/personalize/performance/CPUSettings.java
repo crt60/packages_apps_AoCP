@@ -227,7 +227,7 @@ public class CPUSettings extends Fragment implements SeekBar.OnSeekBarChangeList
         current = availableFrequencies[progress];
         CMDProcessor cmd = new CMDProcessor();
         int minSliderProgress = mMinSlider.getProgress();
-        if (progress <= minSliderProgress) {
+        if (progress >= minSliderProgress) {
             mMinSlider.setProgress(progress);
             mMinSpeedText.setText(toMHz(current));
             mMinFreqSetting = current;
@@ -247,7 +247,7 @@ public class CPUSettings extends Fragment implements SeekBar.OnSeekBarChangeList
         current = availableFrequencies[progress];
         CMDProcessor cmd = new CMDProcessor();
         int maxSliderProgress = mMaxSlider.getProgress();
-        if (progress >= maxSliderProgress) {
+        if (progress <= maxSliderProgress) {
             mMaxSlider.setProgress(progress);
             mMaxSpeedText.setText(toMHz(current));
             mMaxFreqSetting = current;

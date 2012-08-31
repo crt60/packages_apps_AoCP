@@ -145,6 +145,12 @@ public class Lockscreens extends AoCPPreferenceFragment implements
                     Settings.Secure.LOCK_SCREEN_LOCK_USER_OVERRIDE,
                     ((CheckBoxPreference) preference).isChecked() ? 1 : 0);
             return true;
+        } else if (preference == mLockscreenWeather) {
+
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCKSCREEN_WEATHER,
+                    ((CheckBoxPreference) preference).isChecked() ? 1 : 0);
+            return true;
         } else if (preference == mLockscreenWallpaper) {
             Display display = getActivity().getWindowManager().getDefaultDisplay();
             int width = display.getWidth();
