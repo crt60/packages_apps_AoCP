@@ -7,7 +7,7 @@
         android:id="@+id/Freq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FF33B5E5"
+        android:textColor="#FFFF8E00"
         android:textSize="18sp"
         android:textStyle="bold"
         android:text="@string/freq"/>

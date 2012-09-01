@@ -112,7 +112,7 @@ public class ColorPickerDialog
             @Override
             public void onClick(View v) {
                 try {
-                    int newColor = 0xFF33B5E5;
+                    int newColor = 0xFFFF8E00;
                     mColorPicker.setColor(newColor, true);
                 } catch (Exception e) {
                 }
