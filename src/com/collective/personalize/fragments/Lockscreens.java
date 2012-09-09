@@ -59,6 +59,7 @@ public class Lockscreens extends AoCPPreferenceFragment implements
 
     private static final String PREF_LOCKSCREEN_BATTERY = "lockscreen_battery";
     private static final String PREF_VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+    private static final String PREF_LOCKSCREEN_MENU_UNLOCK = "lockscreen_menu_unlock";
     private static final String PREF_USER_OVERRIDE = "lockscreen_user_timeout_override";
     private static final String PREF_LOCKSCREEN_WEATHER = "lockscreen_weather";
     private static final String PREF_LOCKSCREEN_WEATHER_TYPE = "lockscreen_weather_type";
@@ -74,6 +75,7 @@ public class Lockscreens extends AoCPPreferenceFragment implements
 
     CheckBoxPreference mLockscreenBattery;
     CheckBoxPreference mVolumeRockerWake;
+    CheckBoxPreference mLockscreenMenuUnlock
     CheckBoxPreference mLockScreenTimeoutUserOverride;
     CheckBoxPreference mLockscreenWeather;
     ListPreference mLockscreenWeatherType;
@@ -96,6 +98,10 @@ public class Lockscreens extends AoCPPreferenceFragment implements
         mVolumeRockerWake = (CheckBoxPreference) findPreference(PREF_VOLUME_ROCKER_WAKE);
         mVolumeRockerWake.setChecked(Settings.System.getBoolean(mContext
                 .getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN, false));
+        
+        mLockscreenMenuUnlock = (CheckBoxPreference) findPreference(PREF_LOCKSCREEN_MENU_UNLOCK);
+	mLockscreenMenuUnlock.setChecked(Settings.System.getInt(getActivity()
+	        .getContentResolver(), Settings.System.LOCKSCREEN_MENU_UNLOCK, 0) == 1);
 
         mLockScreenTimeoutUserOverride = (CheckBoxPreference) findPreference(PREF_USER_OVERRIDE);
         mLockScreenTimeoutUserOverride.setChecked(Settings.Secure.getInt(getActivity()
@@ -140,6 +146,11 @@ public class Lockscreens extends AoCPPreferenceFragment implements
                     Settings.System.VOLUME_WAKE_SCREEN,
                     ((CheckBoxPreference) preference).isChecked());
             return true;
+        } else if (preference == mLockscreenMenuUnlock) {
+	    Settings.System.putInt(getActivity().getContentResolver(),
+		    Settings.System.LOCKSCREEN_MENU_UNLOCK,
+		    ((CheckBoxPreference)preference).isChecked() ? 1 : 0);
+	   return true;
         } else if (preference == mLockScreenTimeoutUserOverride) {
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.LOCK_SCREEN_LOCK_USER_OVERRIDE,
