@@ -75,7 +75,7 @@ public class Lockscreens extends AoCPPreferenceFragment implements
 
     CheckBoxPreference mLockscreenBattery;
     CheckBoxPreference mVolumeRockerWake;
-    CheckBoxPreference mLockscreenMenuUnlock
+    CheckBoxPreference mLockscreenMenuUnlock;
     CheckBoxPreference mLockScreenTimeoutUserOverride;
     CheckBoxPreference mLockscreenWeather;
     ListPreference mLockscreenWeatherType;
