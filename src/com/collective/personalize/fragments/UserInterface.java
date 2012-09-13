@@ -1,4 +1,3 @@
-
 package com.collective.personalize.fragments;
 
 import java.io.File;
@@ -204,6 +203,12 @@ public class UserInterface extends AoCPPreferenceFragment {
             })
             .create()
             .show();
+            return true;
+            } else if (preference == mRecentKillAll) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.RECENT_KILL_ALL_BUTTON, checked ? 1 : 0);
+            Helpers.restartSystemUI();
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
